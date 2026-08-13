@@ -45,6 +45,7 @@ Se requieren las dos pasadas finales de `pdflatex` para resolver correctamente l
 - `referencias.bib` — base bibliográfica (6 entradas: Fagan 1976, ISO/IEC 25010:2023, ISO/IEC/IEEE 29148:2018, OMG UML 2.5.1, Pohl 2010, SWEBOK Guide v4.0).
 
 **Imágenes** (carpeta `figuras/`, formato PNG, referenciadas por `\includegraphics`):
+- `logo_uteq.png` — logo institucional usado en la carátula.
 - `Diagrama_Clases_Citas.png` — P1, diagrama de clases UML.
 - `Diagrama_Actividades_Citas.png` — P2, diagrama de actividades UML (v1.0).
 - `Diagrama_MaquinasEstado_Citas.png` — P3, máquina de estados UML.
@@ -61,15 +62,31 @@ No se requiere ningún paquete `.sty` externo ni descarga adicional: todos los p
 
 ```
 IR_Ev-Practica_Unidad-IV_MendozaParraga_4B/
-├── MendozaParraga_Evaluacion_U4.tex   # Archivo principal (fuente LaTeX)
-├── referencias.bib                    # Base bibliográfica (BibTeX)
-├── README.md                          # Este archivo
-├── MendozaParraga_Evaluacion_U4.pdf   # PDF compilado (entregable final)
-└── figuras/
+│
+├── MendozaParraga_Evaluacion_U4.pdf     # PDF compilado (entregable final)
+├── MendozaParraga_Evaluacion_U4.tex     # Archivo principal (fuente LaTeX)
+├── README.md                            # Este archivo
+├── referencias.bib                      # Base bibliográfica (BibTeX)
+│
+├── Evidencia_EvaluacionPractica/        # Evidencia manuscrita original (P1–P8)
+│   ├── p1_diagrama_clases.jpg
+│   ├── p2_diagrama_actividades_v1.jpg
+│   ├── p3_maquina_estados_p4_tabla.jpg
+│   ├── p4_diagrama_corregido.jpg
+│   ├── p5_requisitos_1.jpg
+│   ├── p5_p6_requisitos_2.jpg
+│   ├── p7_inspeccion.jpg
+│   └── p8_pruebas.jpg
+│
+├── Evidencia_EvaluacionSGA/             # Evidencia original del cuestionario SGA
+│   └── RevisionIntento_AndyMendoza.pdf
+│
+└── figuras/                             # Imágenes usadas por el .tex (\includegraphics)
     ├── Diagrama_Clases_Citas.png
     ├── Diagrama_Actividades_Citas.png
     ├── Diagrama_MaquinasEstado_Citas.png
     ├── Diagrama_ActividadesCorregido_Citas.png
+    ├── logo_uteq.png
     ├── Resumen_Evaluacion_LMS.png
     ├── Revision_intento_lms.png
     ├── revision_pg-1.png
@@ -81,6 +98,11 @@ IR_Ev-Practica_Unidad-IV_MendozaParraga_4B/
     ├── revision_pg-7.png
     └── revision_pg-8.png
 ```
+
+### Sobre las carpetas de evidencia
+
+- **`Evidencia_EvaluacionPractica/`**: contiene las fotografías originales del desarrollo manuscrito de P1 a P8 (diagramas UML dibujados a mano y esquemas de requisitos). Se conservan como respaldo y trazabilidad del trabajo, pero **no son referenciadas por el `.tex`**; las versiones digitalizadas/rehechas que sí se usan en el PDF final están en `figuras/`.
+- **`Evidencia_EvaluacionSGA/`**: contiene el PDF original tal como se descargó del SGA (revisión de intento completa, sin procesar). Las 8 páginas de este PDF fueron convertidas a imagen (`revision_pg-1.png` … `revision_pg-8.png`, en `figuras/`) para poder incrustarlas en el documento LaTeX como anexo a página completa.
 
 ---
 
@@ -100,6 +122,7 @@ El PDF compilado contiene, en este orden:
 
 ## 4. Notas para la reproducción
 
-- Clonar el repositorio completo (incluida la carpeta `figuras/` y el archivo `referencias.bib`) antes de compilar; el documento no compilará correctamente si falta alguno de estos archivos.
+- Clonar el repositorio completo antes de compilar; el documento requiere estrictamente la carpeta `figuras/` y el archivo `referencias.bib` en la raíz — no compilará correctamente si falta alguno de estos dos.
+- Las carpetas `Evidencia_EvaluacionPractica/` y `Evidencia_EvaluacionSGA/` son material de respaldo (evidencia original manuscrita y del SGA) y **no intervienen en la compilación**; pueden omitirse al clonar solo si se desea generar el PDF, aunque se recomienda conservarlas como parte de la trazabilidad del trabajo.
 - No es necesario instalar ningún paquete adicional fuera de una distribución LaTeX estándar.
 - Si se compila en un editor online (Overleaf) o local con soporte de perfiles de compilación, seleccionar explícitamente el motor **BibTeX**, no Biber.
