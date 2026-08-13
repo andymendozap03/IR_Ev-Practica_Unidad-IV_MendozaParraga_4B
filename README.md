@@ -112,7 +112,7 @@ El PDF compilado contiene, en este orden:
 
 1. **Carátula** con datos de identificación, URL del repositorio (en una sola línea) y evidencia del cuestionario rendido en el SGA (capturas de resumen y de revisión del intento).
 2. **Instrucciones generales y entregables**, **criterios de piso** y **caso práctico** (Sistema de Reserva de Citas Médicas), transcritos del instrumento de evaluación.
-3. **Actividades prácticas P1–P10** (70 puntos): diagrama de clases, diagrama de actividades, máquina de estados, tabla de consistencia entre perspectivas (con corrección aplicada), especificación de requisitos con esquema de atributos, priorización MoSCoW, inspección 29148, pruebas de aceptación trazadas, matriz de trazabilidad y gestión del cambio con línea base.
+3. **Actividades prácticas desarrolladas P1–P8** (70 puntos): diagrama de clases, diagrama de actividades, máquina de estados, tabla de consistencia entre perspectivas (con corrección aplicada), especificación de requisitos con esquema de atributos, priorización MoSCoW, inspección 29148, pruebas de aceptación trazadas.
 4. **Rúbrica de evaluación** (componente SGA 30 % + componente práctico 70 %).
 5. **Marco normativo de referencia** con las 6 citas bibliográficas y su listado final.
 6. **Anexo:** revisión de intento completa del cuestionario del SGA (8 páginas, incrustadas a página completa).
