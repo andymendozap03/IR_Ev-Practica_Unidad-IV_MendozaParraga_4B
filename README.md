@@ -97,16 +97,8 @@ El PDF compilado contiene, en este orden:
 
 ---
 
-## 4. Criterios de piso (recordatorio)
 
-Conforme al instrumento de evaluación, el incumplimiento de cualquiera de los siguientes puntos implica calificación **CERO (0)** en toda la prueba:
-
-1. **Evidencia del repositorio:** la carátula del PDF debe mostrar, en una sola línea, la URL de este repositorio, y el repositorio debe ser público y accesible.
-2. **Reproducibilidad del PDF:** el PDF debe poder regenerarse exactamente clonando este repositorio y siguiendo los pasos de compilación descritos en la Sección 1 de este README.
-
----
-
-## 5. Notas para la reproducción
+## 4. Notas para la reproducción
 
 - Clonar el repositorio completo (incluida la carpeta `figuras/` y el archivo `referencias.bib`) antes de compilar; el documento no compilará correctamente si falta alguno de estos archivos.
 - No es necesario instalar ningún paquete adicional fuera de una distribución LaTeX estándar.
